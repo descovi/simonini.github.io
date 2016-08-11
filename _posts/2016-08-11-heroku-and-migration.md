@@ -4,7 +4,7 @@ title: Heroku and Migration
 categories: rails heroku migration database
 ---
 
-In heroku when you relase a new version with you have to remember the migration.
+In [Heroku](http://heroku.com) when you relase a new version, you have to remember the migration:
   
     git push heroku master && heroku run rails db:migrate
 
