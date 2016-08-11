@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Heroku and Migration
+title: Heroku and migration for Rails
 categories: rails heroku migration database
 ---
 
-In [Heroku](http://heroku.com) when you relase a new version, you have to remember the migration:
+In [Heroku](http://heroku.com) when you relase a new version with Rails, you have to remember the migration for the database:
   
     git push heroku master && heroku run rails db:migrate
 
