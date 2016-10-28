@@ -19,7 +19,7 @@ I problemi di Devise e del suo wiki che finora ho individuato sono 4:
 
 - Il comportamento di default di devise con l'obbligo di inserire due volte la password per ogni modifica è davvero noioso e poco proponibile come struttura standard per un cliente (e anche dal punto di vista dell'esperienza dell'utente).
 
-- l'introduzione dei strong parameters di rails 4 e successivo ha ulteriormente complicato il percorso di customizzazione.
+- l'introduzione dei strong parameters di rails 4 e successivo ha ulteriormente complicato il percorso di personalizzazione.
 
 Il percorso suggerito all'interno del wiki per personalizzare la pagina dell'utente la trovo decisamente faticosa e inutilmente complessa. 
 
@@ -91,7 +91,7 @@ Giunti a questo punto la pagina di modifica del profilo è diventato qualcosa di
 
 MA
 
-Se volessi dare la possibilità all'utente di modificare la propria password? Lo stesso wiki di devise suggerisce di creare una custom actions all'interno del nostro controller.
+Se volessi dare la possibilità all'utente di modificare la propria password? Lo stesso wiki di devise suggerisce di creare una azione personalizzata all'interno del nostro controller.
 
 A questo punto ho capito che in generale è molto più semplice evitare del tutto devise ed utilizzare la azione edit per le modifiche "standard" del profilo e una azione specifica invece per la modifica della password.
 
