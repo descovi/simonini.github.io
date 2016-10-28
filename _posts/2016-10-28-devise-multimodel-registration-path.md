@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizzare Devise per creare una pagina profilo
+title: Personalizzare Devise per creare una pagina profilo
 categories: rails ruby devise
 ---
 
