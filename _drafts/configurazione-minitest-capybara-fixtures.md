@@ -122,5 +122,5 @@ Sono poche righe e interventi in apparenza banali ma non è stato semplice indiv
       [..]
       def teardown
         Capybara.reset_sessions!
-        Capybara.default_max_wait_time = 5
+        sleep(1)
       end
