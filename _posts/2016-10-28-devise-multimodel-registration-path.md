@@ -1,6 +1,7 @@
 ---
 layout: post
-title: devise-multimodel-registration-path
+title: Customizzare Devise per creare una pagina profilo
+categories: rails ruby devise
 ---
 
 # Vantaggi e svantaggi nell'uso di Devise e personalizzazione del comportamento
@@ -16,7 +17,7 @@ I problemi di Devise e del suo wiki che finora ho individuato sono 4:
 
 - l'uscita dai binari obbliga lo sviluppatore a sfogliare in continuazione il wiki di devise che in questo caso risulta anche obsoleto (ed è il motivo principale per cui mi sto appuntando queste cose; infatti la soluzione 1, quella in apparenza più semplice, nasconde delle insidie la cui soluzione è praticamente nasconsta nella soluzione 2).
 
-- Il comportamento di default di devise con l'obbligo di inserire due volte la password per ogni modifica è davvero noioso e poco proponibile come struttura standard per un cliente (e anche dal mio punto di vista di designer).
+- Il comportamento di default di devise con l'obbligo di inserire due volte la password per ogni modifica è davvero noioso e poco proponibile come struttura standard per un cliente (e anche dal punto di vista dell'esperienza dell'utente).
 
 - l'introduzione dei strong parameters di rails 4 e successivo ha ulteriormente complicato il percorso di customizzazione.
 
