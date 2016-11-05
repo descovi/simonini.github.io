@@ -47,41 +47,41 @@ Ho due risorse seperate per il sistema di login. Quindi non userò lo standard _
 
 Per la pagina dell'utente, il codice della view l'ho cambiato definendo un _path_ ed un _method_ differente. Da
 
-```ruby
-# devise/shared/links.html.erb
-simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put })
-```
+{% highlight haml%}
+# devise/shared/links.haml
+= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put })
+{% endhighlight %}
 
 a
 
-```ruby    
-# devise/shared/links.html.erb
-simple_form_for(resource, as: resource_name, url: agent_registration_path(), html: { method: :patch })
-```
+{% highlight haml %}
+# devise/shared/links.haml
+= simple_form_for(resource, as: resource_name, url: agent_registration_path(), html: { method: :patch })
+{% endhighlight %}
 
 In questo modo posso creare un semplice link nella view:
 
-```ruby    
+{% highlight erb %}
 # layouts/agent-logged.haml
 %li= link_to 'user', edit_agent_registration_path, 'Profilo', 'devise'
-```
+{% endhighlight %}
 
 Dalla view di devise togliere password e password_confirmation per avere una pagina meno tediosa. Si costruirà poi una pagina specifica per cambiare la password.
 
-```ruby
+{% highlight erb %}
 # devise/registrations/edit.html.erb
 <%= simple_form_for(resource, as: resource_name, url: agent_registration_path(), html: { method: :patch } do |f|) %>
   <%= f.input :name %>
   <%= f.input :surname %>
   <%= f.input :email, required: true, autofocus: true %>
   <%= f.button :submit %>
-```
+{% endhighlight %}
 
 ## Controller
 
 Per poter effettuare modifiche tramite il controller di devise al profilo è necessario personalizzarlo.
 
-```ruby
+{% highlight ruby %}
 # controllers/Agent/registrations_controller.rb
 class Agent::RegistrationsController < Devise::RegistrationsController
   protected
@@ -89,15 +89,15 @@ class Agent::RegistrationsController < Devise::RegistrationsController
     resource.update_without_password(params)
   end
 end
-```
+{% endhighlight %}
 
 ## Routes
 
 Per poter utilizzare il controller che abbiamo appena definito personalizzare il routing standard:
 
-```ruby 
+{% highlight ruby %}
 devise_for :agents, controllers: {registrations: 'agent/registrations'}
-```
+{% endhighlight %}
 
 Giunti a questo punto la pagina di modifica del profilo è diventato qualcosa di più accessibile per l'utente.
 
@@ -115,13 +115,13 @@ Chiaramente bisogna stare attenti che l'utente possa solo modificare se stesso e
 
 Alla fine il mio routing diventa qualcosa del genere:
 
-```ruby
+{% highlight ruby %}
 resources :agents, only: [:new, :create, :show, :edit] do
   collection do
     get 'edit_update_password'
     patch 'update_password'
   end
 end
-```
+{% endhighlight %}
 
 In questo modo ho due schermate una per la modifica delle password ed una per la modifica del profilo.
