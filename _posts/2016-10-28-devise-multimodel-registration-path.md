@@ -7,7 +7,7 @@ categories: rails ruby devise
 # Vantaggi e svantaggi nell'uso di Devise e personalizzazione del comportamento
 
 Devise è molto comodo per impostare velocemente un sistema di login full optional.
-Diventa più complesso quando si tratta di personalizzarne il comportanemento anche se per apparenti aspetti banali.
+Diventa più complesso quando si tratta di personalizzarne il comportamento.
 
 Ad esempio costruire una _pagina profilo_ per l'utente loggato diventa improvvisamente una cosa complessa se si decide di seguire il wiki di Devise.
 
@@ -15,13 +15,13 @@ I problemi di Devise e del suo wiki che finora ho individuato sono 4:
   
 - operare secondo le indicazioni del wiki di Devise ondeggia pericolosamente al di fuori delle tipiche convenzioni di Rails.
 
-- l'uscita dai binari obbliga lo sviluppatore a sfogliare in continuazione il wiki di devise che in questo caso risulta anche obsoleto (ed è il motivo principale per cui mi sto appuntando queste cose; infatti la soluzione 1, quella in apparenza più semplice, nasconde delle insidie la cui soluzione è praticamente nasconsta nella soluzione 2).
+- l'uscita dai binari obbliga lo sviluppatore a sfogliare in continuazione il wiki di devise che in questo caso risulta anche obsoleto (ed è il motivo principale per cui mi sto appuntando queste cose; infatti la soluzione 1, quella in apparenza più semplice, nasconde delle insidie la cui soluzione è praticamente nascosta nella soluzione 2).
 
 - Il comportamento di default di devise con l'obbligo di inserire due volte la password per ogni modifica è davvero noioso e poco proponibile come struttura standard per un cliente (e anche dal punto di vista dell'esperienza dell'utente).
 
 - l'introduzione dei strong parameters di rails 4 e successivo ha ulteriormente complicato il percorso di personalizzazione.
 
-Il percorso suggerito all'interno del wiki per personalizzare la pagina dell'utente la trovo decisamente faticosa e inutilmente complessa. 
+Il percorso suggerito all'interno del wiki per personalizzare la pagina dell'utente lo trovo decisamente faticosp e inutilmente complesso.
 
 Ad un certo punto si fa prima ad utilizzare rails in modo standard e lasciare a devise "solo" la parte di registrazione e login bypassandolo per quanto riguarda la pagina di editing dell'utente stesso.
 
@@ -93,7 +93,7 @@ end
 
 ## Routes
 
-Per poter utilizzare il controller che abbiamo appena definito personalizzare il routing standard:
+Per poter utilizzare il controller che abbiamo appena definito è necessario personalizzare il routing standard:
 
 {% highlight ruby %}
 devise_for :agents, controllers: {registrations: 'agent/registrations'}
