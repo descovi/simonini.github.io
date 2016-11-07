@@ -12,12 +12,12 @@ Alla fine, come spesso accade in queste occasioni, la soluzione non era così co
 Ecco il metodo che ho creato all'interno del mio helper (test/helpers/form_helper.rb)
 
 {% highlight ruby %}
-    def select_tags_from_selectize(parent_selector, with:)
-      fail "Array expected" unless with.is_a?(Array)
-      selector = "#{parent_selector} select".to_json.html_safe
-      js_string = "var selector = $(#{selector})[0].selectize.setValue(#{with.to_json.html_safe})"
-      page.execute_script(js_string)
-    end
+def select_tags_from_selectize(parent_selector, with:)
+  fail "Array expected" unless with.is_a?(Array)
+  selector = "#{parent_selector} select".to_json.html_safe
+  js_string = "var selector = $(#{selector})[0].selectize.setValue(#{with.to_json.html_safe})"
+  page.execute_script(js_string)
+end
 {% endhighlight %}
 
 Decisivo nella ricerca e nella soluzione dei miei problemi è stato reperire questo prezioso gist: [link](https://gist.github.com/jcieslar/6491810f4fd9fada0ab3).
