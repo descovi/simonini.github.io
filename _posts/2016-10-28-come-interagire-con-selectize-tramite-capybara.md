@@ -5,7 +5,7 @@ categories: rails tdd integration-test capybara selectize javascript
 ---
 
 Interagire attraverso Capybara con la propria app e un javascript driver non è una cosa agevolissima. In particolare se si è alle prime armi come me su questo tipo di argomento.
-Ho faticato non poco a trovare una soluzione all'interazione col plugin javascript selectize (https://github.com/selectize/selectize.js/).
+Ho faticato non poco a trovare una soluzione all'interazione col plugin [javascript selectize](https://github.com/selectize/selectize.js/).
 
 Alla fine, come spesso accade in queste occasioni, la soluzione non era così complessa ma la ricerca per la soluzione invece è stata molto più lunga del previsto.
 
