@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Prove con trail blazer e cell
-date:   2017-02-10 08:34:49 +0200
+date:   2017-02-09 08:34:49 +0200
 categories: rails ruby trailblazer cell
 ---
 
