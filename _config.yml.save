@@ -7,7 +7,7 @@
 
 # Site settings
 title: Appunti
-email: alessandro@venezia86.it
+email: alessandro@goofygoober.it
 description: > # this means to ignore newlines until "baseurl:"
   Appunti di sviluppo Ruby on Rails
 baseurl: "/articles" # the subpath of your site, e.g. /blog
