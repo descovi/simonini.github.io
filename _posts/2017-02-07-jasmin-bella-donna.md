@@ -1,9 +1,11 @@
 ---
 layout: post
 title: Jasmin bella donna.
+date:   2017-02-10 7:34:49 +0200
+category: javascript rails
 ---
 
-# Seducente Jasmine
+## Seducente Jasmine
 
 Jasmine è una bella donna. È viola. Ti dice cosa è giusto e cosa è sbagliato.
 Jasmine è una libreria per javascript.
@@ -36,7 +38,7 @@ Con l'utilizzo di [jasmine-fixtures](https://github.com/searls/jasmine-fixture).
 affix("div.test")
 {% endhighlight %}
 
-## Come si installa Jasmine Fixtures?''
+## Come si installa Jasmine Fixtures?
 
 Per l'utilizzo all'interno di Rails:
 
@@ -59,11 +61,33 @@ describe('TuoOgetto', function(){
 })
 {% endhighlight %}
 
+## Jquery, come aggiungere una funzione ad un elemento di JQuery?
 
-## Video e materiale
+Utilizzando il metodo extend si possono aggiungere tutti i metodi che si ritengono opportuni.
+
+{% highlight javascript %}
+jQuery.fn.extend({
+  subquestions: function(e){
+    
+    var ids_of_children  = $(this).data("children").split(" ")
+    var $subquestions = $('')
+
+    ids_of_children.forEach(function(id){
+      $subquestions = $subquestions.add($("#acquisition_field_row_id_"+id))
+    })
+    return $subquestions
+  }
+})
+{% endhighlight %}
+
+
+## Video e altro materiale
+
 Come testare sul DOM
-http://stackoverflow.com/questions/16163852/how-to-unit-test-dom-manipulation-with-jasmine
 
-Video che introduce all'uso di Jasmine in contesti reali di legacy code.
+- [http://stackoverflow.com/questions/16163852/how-to-unit-test-dom-manipulation-with-jasmine](http://stackoverflow.com/questions/16163852/how-to-unit-test-dom-manipulation-with-jasmine)
+
+Video che introduce all'uso di Jasmine in contesti reali di legacy code.  
 La prima parte riguarda un esempio dove javascript viene usato nel classico modo (jquery e manipolazione del dom) mentre il secondo è un esempio con backbone.
-https://www.youtube.com/watch?v=PWHyE1Ru4X0
+
+- [https://www.youtube.com/watch?v=PWHyE1Ru4X0](https://www.youtube.com/watch?v=PWHyE1Ru4X0)
