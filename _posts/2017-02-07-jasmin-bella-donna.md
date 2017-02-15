@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jasmin bella donna.
+title: Jasmine bella donna.
 date:   2017-02-10 7:34:49 +0200
 category: javascript rails
 ---
