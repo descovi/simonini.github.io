@@ -4,3 +4,4 @@ group :jekyll_plugins do
 end
 gem 'jekyll-github-metadata'
 gem 'jekyll-seo-tag'
+gem 'jekyll-sitemap'

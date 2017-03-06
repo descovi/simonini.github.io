@@ -27,3 +27,4 @@ permalink: "/:title.html"
 
 gems:
   - jekyll-seo-tag
+  - jekyll-sitemap
