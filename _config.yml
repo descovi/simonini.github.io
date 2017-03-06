@@ -15,8 +15,15 @@ url: "https://simonini.github.io" # the base hostname & protocol for your site
 twitter_username: simonini
 github_username:  simonini
 
+# jekyll-seo
+twitter:
+  username: simonini
+
 # Build settings
 markdown: kramdown
 
 gems: ['jekyll-github-metadata']
 permalink: "/:title.html"
+
+gems:
+  - jekyll-seo-tag
