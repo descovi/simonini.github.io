@@ -8,13 +8,16 @@ category: javascript rails
 ## Seducente Jasmine
 
 Jasmine è una bella donna. È viola. Ti dice cosa è giusto e cosa è sbagliato.
-Jasmine è una libreria per javascript.
+Jasmine è una libreria di test per javascript.
 Jasmine è fatta per Rails.
 Io ancora non la uso.
 Sono timido ma lei è li.
 Con gli occhi seducenti [verdi scuro della sua documentazione](https://jasmine.github.io/2.0/introduction.html).
 
 ## Come installo jasmine?
+
+Jasmine si installa utilizzando il solito Gemfile.
+All'interno del gruppo _test_ e _development_ aggiungere le seguenti righe:
 
 {% highlight ruby %}
 group :test, :development do
@@ -23,20 +26,58 @@ group :test, :development do
 end
 {% endhighlight %}
 
+Aggiungete i gruppi se già non ci sono.
+
+Da terminale eseguire le magiche parole:
+
+{% highlight bash %}
+bundle install
+{% endhighlight%}
+
 ## Come faccio a vedere il risultato dei test?
 
 1. Avvia il server.
 2. Vai su [/specs](http://localhost:3000/specs)
 
 La gemma crea una rotta /specs dove si possono vedere i risultati dei test.
+Comodo e veloce.
+Potete anche usare la linea di comando ma a me al momento non interessa.
 
 ## Come posso testare la manipolazione del dom?
 
 Con l'utilizzo di [jasmine-fixtures](https://github.com/searls/jasmine-fixture).
 
 {% highlight javascript %}
-affix("div.test")
+affix("div.test");
 {% endhighlight %}
+
+Potete annidare gli elementi che create. Come?
+
+{% highlight javascript %}
+affix("div.test").affix("div.div-annidato");
+{% endhighlight %}
+
+Facile facile. Un esempio più strutturato?
+Eccolo:
+
+{% highlight javascript %}
+    child_0 = affix(".fatherquestion[data-children='1 2 3'][data-id='0']");
+    child_0.affix(".inputs").affix("input[type=radio][value='yes']")
+                            .affix("input[type=radio][value='no']");
+{% endhighlight %}
+
+Solitamente la preparazione del dom avviene nel file di test nella cartella spec/javascripts all'interno del file argomento\_del\_tuo\_test\_spec.js.
+Se vuoi utilizzare la stessa struttura più volte lo puoi fare dentro il metodo _before\_each_.
+Esempio:
+
+{% highlight javascript %}
+describe('TuoOgetto', function(){
+  beforeEach(function() {
+    affix(".div-ripetuto-per-ogni-test");
+  })
+})
+{% endhighlight %}
+
 
 ## Come si installa Jasmine Fixtures?
 
@@ -47,21 +88,7 @@ Per l'utilizzo all'interno di Rails:
 
 Se la cartella _helpers_ non è presente va creata.
 
-## Come inserisco dei valori validi per ogni test?
-
-Utilizzando il metodo beforeEach
-
-{% highlight javascript %}
-describe('TuoOgetto', function(){
-  beforeEach(function(){
-    // Qui dentro ci metti quello che ti piace che venga eseguito prima di ogni test
-    // ad esempio:
-    affix("div.test")
-  })
-})
-{% endhighlight %}
-
-## Jquery, come aggiungere una funzione ad un elemento di JQuery?
+## Jquery, come aggiungo una funzione ad un elemento di JQuery?
 
 Utilizzando il metodo extend si possono aggiungere tutti i metodi che si ritengono opportuni.
 
