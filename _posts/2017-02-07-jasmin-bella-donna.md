@@ -7,11 +7,11 @@ category: javascript rails
 
 ## Seducente Jasmine
 
-Jasmine è una bella donna. È viola. Ti dice cosa è giusto e cosa è sbagliato.
-Jasmine è una libreria di test per javascript.
-Jasmine è fatta per Rails.
-Io ancora non la uso.
-Sono timido ma lei è li.
+Jasmine è una bella donna. È viola. Ti dice cosa è giusto e cosa è sbagliato.  
+Jasmine è una libreria di test per javascript.  
+Jasmine è fatta per Rails.  
+Io ancora non la uso.  
+Sono timido ma lei è li.  
 Con gli occhi seducenti [verdi scuro della sua documentazione](https://jasmine.github.io/2.0/introduction.html).
 
 ## Come installo jasmine?
@@ -26,8 +26,7 @@ group :test, :development do
 end
 {% endhighlight %}
 
-Aggiungete i gruppi se già non ci sono.
-
+Aggiungete i gruppi se già non ci sono.  
 Da terminale eseguire le magiche parole:
 
 {% highlight bash %}
@@ -36,7 +35,7 @@ bundle install
 
 ## Come faccio a vedere il risultato dei test?
 
-1. Avvia il server.
+1. Avvia il server rails.
 2. Vai su [/specs](http://localhost:3000/specs)
 
 La gemma crea una rotta /specs dove si possono vedere i risultati dei test.
@@ -46,6 +45,7 @@ Potete anche usare la linea di comando ma a me al momento non interessa.
 ## Come posso testare la manipolazione del dom?
 
 Con l'utilizzo di [jasmine-fixtures](https://github.com/searls/jasmine-fixture).
+Jasmine-fixture una [volta installato](#installa-fixtures) si usa nel seguente modo:
 
 {% highlight javascript %}
 affix("div.test");
@@ -79,7 +79,7 @@ describe('TuoOgetto', function(){
 {% endhighlight %}
 
 
-## Come si installa Jasmine Fixtures?
+## <a name="installa-fixtures"></a>Come si installa Jasmine Fixtures?
 
 Per l'utilizzo all'interno di Rails:
 
