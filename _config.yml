@@ -10,7 +10,7 @@ title: Appunti
 email: alessandro@venezia86.it
 description: > # this means to ignore newlines until "baseurl:"
   Appunti di sviluppo Ruby on Rails
-baseurl: "/articles" # the subpath of your site, e.g. /blog
+#baseurl: "/articles" # the subpath of your site, e.g. /blog
 url: "https://simonini.github.io" # the base hostname & protocol for your site
 twitter_username: simonini
 github_username:  simonini
