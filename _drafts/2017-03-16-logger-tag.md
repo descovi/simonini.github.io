@@ -4,8 +4,9 @@ title: Log ordinati con Rails
 categories: rails
 ---
 
-Usando Rails è fondamentale avere dei log ordinati.
-Uno degli strumenti meno conosciuti è lo strumento di tagging:
+Usando Rails è fondamentale avere _log_ chiari e ordinati.  
+Uno tra gli strumenti più comodi (e poco conosciuti) è il metodo _tagged_ di logger.  
+In breve si usa nel seguente modo:  
 
 {% highlight ruby %}
 logger.tagged("Sistema di API esterno") do
@@ -23,7 +24,8 @@ L'output generato dal logger diventa il seguente:
 [Sistema di API esterno] Fine procedura
 {% endhighlight %}
 
-Tramite poi il comando tail di unix insieme a grep diventa molto facile isolare le porzioni a cui si potrebbe essere interessati per motivi di debug:
+Nel grande flusso di informazioni di un applicazione Rails è necessario sapere come filtrare i dati in modo, veloce semplice e chiaro.
+In tal senso aiuta il comando _grep_ associato a _tail_. Con questi comandi diventa molto più facile isolare le porzioni del log a cui si potrebbe essere interessati per motivi di debug:
 
 {% highlight bash %}
 tail -f log/production.log | grep api
