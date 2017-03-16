@@ -28,3 +28,8 @@ Tramite poi il comando tail di unix insieme a grep diventa molto facile isolare 
 {% highlight bash %}
 tail -f log/production.log | grep api
 {% endhighlight %}
+
+## Fonti
+
+- [Api Ufficiali ~ Ruby On Rails](http://api.rubyonrails.org/classes/ActiveSupport/TaggedLogging.html)
+- [Keeping Your Logs From Becoming an Unreadable Mess](http://www.justinweiss.com/articles/keeping-your-logs-from-becoming-an-unreadable-mess/)
