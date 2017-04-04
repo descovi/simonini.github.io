@@ -2,7 +2,7 @@
 layout: post
 title: Configurazione Minitest, Capybara e Fixtures all'interno di Rails
 categories: rails capybara tdd integration-test
-date: 2017-04-04 07:52:49 +0200 
+date: 2017-04-04 09:01:19 +0200 
 ---
 
 ## UMB, Umile servo dei Binari 🚊
