@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Riordinare le colonne in Rails
+date: 2017-04-04 09:02:49 +0200
+categories: rails migration migrazioni rename
 ---
 
 Si possono riordinare le colonne in Rails tramite le migrazioni?
