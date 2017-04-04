@@ -1,19 +1,18 @@
 ---
 layout: post
-title: Configurazione Minitest, Capybara e Fixtures
-categories: 
+title: Configurazione Minitest, Capybara e Fixtures all'interno di Rails
+categories: rails capybara tdd integration-test
+date: 2017-04-04 07:52:49 +0200 
 ---
 
 ## UMB, Umile servo dei Binari 🚊
 Essendosi il cielo svuotato di idoli da adorare mi sono rifatto nella programmazione cercando di essere il più fedele possibile ai binari imposti da DHH e dal suo team di Basecamp ⛺️.
-In fin di conti scrive libri e articoli interessanti, ha una azienda che funziona alla grande e ha creato un gran framework.
+In fin di conti scrive libri e articoli interessanti, ha una azienda che funziona e ha creato un gran framework.
 
 Purtroppo la grande maggioranza non lo fa (maledetti ribelli!) e quindi sembra impossibile riuscire a configurare dei test di integrazione con i seguenti ingredienti:
 
 - Capybara (con supporto Javascript)
-
 - Fixtures 
-
 - Minitest 
 
 Tutto come [raccomandato da DHH](http://david.heinemeierhansson.com/2014/tdd-is-dead-long-live-testing.html); sempre sia lodato.
@@ -56,11 +55,10 @@ A quel punto si capisce che non sarà semplice come prima.
 La cosa peraltro fastidiosa è che Selenium continua a dirmi che il login non va a buon fine.
 Mi viene inoltre in mente che io uso (da Bravo Servitore del Pensiero Unico Imposto da DHH) turbolinks. E quindi magari i test non fanno in tempo "a capire" quello che sta succendo.
 
-
 ## Poltergeist è molto simpatico e gentile 😍
 Sperando di risolvere tutto in un colpo i miei problemi cambio driver ed uso il più rapido (così viene descritto in alcuni articoli online) Poltergeist.
 In effetti l'approccio è più amichevole e le cose finalmente funzionano come mi aspettavo. Gioia e stupore!
-Decido quindi di darci dentro e scopro (giustamente) che devo [cambiare anche qualche riga di javascript](https://simonini.github.io/articles/rails/tdd/integration-test/capybara/selectize/javascript/2016/10/28/come-interagire-con-selectize-tramite-capybara.html).
+Decido quindi di darci dentro e scopro (giustamente) che devo [cambiare anche qualche riga di javascript](https://simonini.github.io/come-interagire-con-selectize-tramite-capybara.html).
 
 ## Un nuovo nemico 😈
     class CreateBusiness < ActionDispatch::IntegrationTest
