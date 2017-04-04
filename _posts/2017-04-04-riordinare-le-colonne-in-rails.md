@@ -18,4 +18,4 @@ change_column :tabella, :nome_colonna_da_spostare, :tipologia, after: :nome_colo
 A quanto pare questo parametro non è utilizzabile con i database postgresql ma non l'ho sperimentato direttamente poichè normalmente uso mysql o sqlite.
 
 Tra le varie fonti:
-http://stackoverflow.com/questions/18899011/rails-4-migration-how-to-reorder-columns
+[Stackoverflow - Come riordinare le colonne](http://stackoverflow.com/questions/18899011/rails-4-migration-how-to-reorder-columns)
