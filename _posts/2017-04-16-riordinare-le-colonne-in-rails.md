@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Riordinare le colonne in Rails
-date: 2017-04-04 09:02:49 +0200
+date: 2017-04-16 19:02:49 +0200
 categories: rails migration migrazioni rename
 ---
 
