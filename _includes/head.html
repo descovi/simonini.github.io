@@ -22,9 +22,10 @@
       margin-left:0;
       padding-left: 0;
     }
-    blockquote {
+    blockquote, time {
       font-family: "menlo", consolas, monospace;
     }
+
     h1, h2, h3, h4 {font-size: 100%}
     h1 {color: #859900;}
     h2 {color: #cb4b16;}
@@ -40,16 +41,16 @@
       display: inline-block;
       color: #dc322f !important;
     }
-    .correlati-list ul, .correlati-list li{
+    ul, li{
       list-style-type: none; 
       margin-left:  0;
       padding-left: 0;
     }
-    .site-footer ul, .site-footer li {
-      list-style-type: none; 
-      margin-left:  0;
-      padding-left: 0;
+
+    strong {
+      color: #d33682;
     }
+
   </style>
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
