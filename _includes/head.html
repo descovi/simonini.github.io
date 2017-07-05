@@ -5,8 +5,53 @@
 
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <style>
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    body{
+      font-family: "Helvetica";
+      font-size: 100%;
+      max-width: 75%; 
+      margin: 0 auto;
+      padding-top: 20px;
+      background-color: #002b36;
+      color: #93a1a1;
+      line-height: 1.375
+    }
+    .home ul, li{
+      list-style-type: none; 
+      margin-left:0;
+      padding-left: 0;
+    }
+    blockquote {
+      font-family: "menlo", consolas, monospace;
+    }
+    h1, h2, h3, h4 {font-size: 100%}
+    h1 {color: #859900;}
+    h2 {color: #cb4b16;}
+    h3 {color: #b58900;}
+    h4 {color: #6c71c4;}
+    a {text-decoration: none}
+    a:hover {text-decoration: underline}
+    a, a:visited {color: #268bd2;}
+    hr{border: none;border-bottom: 1px solid #bbb}
+    .site-title {
+      font-weight: bold; 
+      padding-bottom: 10px; 
+      display: inline-block;
+      color: #dc322f !important;
+    }
+    .correlati-list ul, .correlati-list li{
+      list-style-type: none; 
+      margin-left:  0;
+      padding-left: 0;
+    }
+    .site-footer ul, .site-footer li {
+      list-style-type: none; 
+      margin-left:  0;
+      padding-left: 0;
+    }
+  </style>
+
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
