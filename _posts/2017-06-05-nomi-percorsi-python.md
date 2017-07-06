@@ -13,7 +13,7 @@ Per lavorare con i percorsi in Python è necessario usare il modulo os.path.
 
 ### La variable \_\_file\_\_ 
 
-La variabile **\_\_file\_\_** contiene il percorso del file che sta eseguendo in quel momento il codice Python.
+La variabile **\_\_file\_\_** contiene il percorso del file che sta eseguendo in quel momento il codice Python.  
 Il percorso ottenuto _non è assoluto_ ma relativo rispetto a dove viene lanciato lo script python.
 
 Per esempio 
@@ -58,7 +58,7 @@ Come si vede l'output contiene l'intero percorso per arrivare al file.
 
 ### Con il metodo: os.path.dirname(percorso\_del\_file)
 
-Ottenuto il nome del file, spesso c'è bisogno di conoscere la directory che contiene il file.
+Ottenuto il nome del file, spesso c'è bisogno di conoscere la directory che contiene il file.  
 Per poterlo fare si può usare il metodo __os.path.dirname()__.
 
 Esempio di utilizzo:
@@ -70,4 +70,5 @@ Output:
     
     /directory/
 
-Dall'esempio è chiaro dedurre il meccanismo di funzionamento del metodo. Il metodo utilizzato su un percorso __restituisce la directory__ che contiene il file.
+Dall'esempio è chiaro dedurre il meccanismo di funzionamento del metodo.  
+Il metodo utilizzato su un percorso __restituisce la directory__ che contiene il file.
