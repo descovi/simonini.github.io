@@ -29,7 +29,7 @@ O magari qualcuno ha deciso di darci una mano.
 Fatto sta che ora è molto più semplice.  
 Per evitare potenziali problemi di sicurezza è importante in ogni caso ricordarsi di rimuovere la url _localhost:3000_ una volta terminato il lavoro col famigerato __login di facebook__.
 
-![Coolprop e Matlab](/assets/facebook_login.png)
+![Impostazioni facebook login](/assets/facebook_login.png)
 
 
 # Redirect con Devise
