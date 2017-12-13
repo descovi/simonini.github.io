@@ -43,10 +43,6 @@ Per quanto riguarda la configurazione invece di Devise per Rails una cosa che mi
 In realtà la soluzione in questo caso è abbastanza semplice.
 L'importante è non confondersi nel wiki molto grosso di [Devise](https://github.com/plataformatec/devise/wiki/How-To:-redirect-to-a-specific-page-on-successful-sign-in) che è pieno di metodi fin troppo complessi rispetto allo scopo.
 
-    class ApplicationController < ActionController::Base
-      def after_sign_in_path_for(resource)
-        request.env['omniauth.origin'] || stored_location_for(resource) || root_path
-      end
-    end
+<script src="https://gist.github.com/simonini/ab0552ad3b9dca6e46f0b6025337183d.js"></script>
 
 Fonte: [How To: redirect to a specific page on successful sign-in](https://github.com/plataformatec/devise/wiki/How-To:-redirect-to-a-specific-page-on-successful-sign-in)
