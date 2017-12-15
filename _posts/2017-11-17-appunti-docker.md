@@ -34,6 +34,13 @@ Per cancellare un container il comando da utilizzare è:
 
     docker container rm <id container>
 
+
+## Appunti in Italiano
+
+Su gist ho trovato questo elenco di appunti in italiano dell'utente savez    
+
+<script src="https://gist.github.com/savez/d91d8269e1fde5bd70e6023932a50683.js"></script>
+
 ## Fonti
 
 - [Sito ufficiale di Docker](https://docs.docker.com/get-started/part2/#recap-and-cheat-sheet-optional)
