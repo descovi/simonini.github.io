@@ -32,11 +32,17 @@ categories: rails
 
     EDITOR=vi rails secrets:edit
 
-- Per poter far si che in development si possano leggere i valori che utilizzano rails secrets.
+- Per poter far si che in development si possano leggere i valori che utilizza rails secrets ricorda di impostare questa regola:
 
     config.read_encrypted_secrets = true  
+
+- In produzione (ad esempio su heroku) è necessario ricordarsi anche di impostare la variabile per la lettura dei secrets. La variabile:
+
+
+    ENV["RAILS_MASTER_KEY"]
 
 
 ## Fonti:
 
 - https://devcenter.heroku.com/articles/paperclip-s3
+- http://www.starkandwayne.com/blog/rails-5-1-applications-can-be-a-lot-more-secretive-on-cloud-foundry-and-heroku/
