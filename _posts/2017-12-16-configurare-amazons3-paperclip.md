@@ -32,6 +32,11 @@ categories: rails
 
     EDITOR=vi rails secrets:edit
 
+- Per poter far si che in development si possano leggere i valori che utilizzano rails secrets.
+
+    config.read_encrypted_secrets = true  
+
+
 ## Fonti:
 
 - https://devcenter.heroku.com/articles/paperclip-s3
