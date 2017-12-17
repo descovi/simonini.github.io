@@ -2,7 +2,7 @@
 layout: post
 title: Jasmine bella donna.
 date:   2017-02-10 7:34:49 +0200
-category: javascript rails
+categories: javascript rails
 ---
 
 ## Seducente Jasmine
@@ -95,7 +95,7 @@ Utilizzando il metodo extend si possono aggiungere tutti i metodi che si ritengo
 {% highlight javascript %}
 jQuery.fn.extend({
   subquestions: function(e){
-    
+
     var ids_of_children  = $(this).data("children").split(" ")
     var $subquestions = $('')
 

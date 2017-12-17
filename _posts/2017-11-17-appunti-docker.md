@@ -2,7 +2,7 @@
 layout: post
 title: Appunti su Docker
 date: 2017-11-17 18:30:49 +0200
-categories: docker
+categories: devops
 ---
 
 ## A cosa serve docker-compose?

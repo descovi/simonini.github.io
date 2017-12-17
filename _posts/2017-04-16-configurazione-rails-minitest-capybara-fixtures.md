@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Configurazione Minitest, Capybara e Fixtures all'interno di Rails
-categories: rails capybara tdd integration-test
-date: 2017-04-16 19:01:19 +0200 
+categories: rails tdd
+date: 2017-04-16 19:01:19 +0200
 ---
 
 ## UMB, Umile servo dei Binari 🚊
@@ -12,13 +12,13 @@ In fin di conti scrive libri e articoli interessanti, ha una azienda che funzion
 Purtroppo la grande maggioranza non lo fa (maledetti ribelli!) e quindi sembra impossibile riuscire a configurare dei test di integrazione con i seguenti ingredienti:
 
 - Capybara (con supporto Javascript)
-- Fixtures 
-- Minitest 
+- Fixtures
+- Minitest
 
 Tutto come [raccomandato da DHH](http://david.heinemeierhansson.com/2014/tdd-is-dead-long-live-testing.html); sempre sia lodato.
 
 ## Alla ricerca dei binari 🚂
-Per questo motivo è stato molto difficile trovare una ricetta per la questione. Tutti gli esempi che si trovano online usano rspec e girl factory. 
+Per questo motivo è stato molto difficile trovare una ricetta per la questione. Tutti gli esempi che si trovano online usano rspec e girl factory.
 Questo già succede normalmente quando cerco informazioni sui test con minitest e fixtures. In questo caso però la situazione peggiora: si arriva al deserto informativo.
 
 C'è da dire che, in ogni caso, spiegazioni punto di vista di RSpec sul meccanismo di Capybara e selenium si trovavano e hanno funzionato come riferimento.
@@ -26,8 +26,8 @@ C'è da dire che, in ogni caso, spiegazioni punto di vista di RSpec sul meccanis
 ## Da Rack a Poltergeist, passando per Selenium
 Già decidere il corretto web driver è stata esperienza non banale e travagliata. Fino a prima usavo rack come webdriver ed era tutto molto semplice e funzionante.
 Purtroppo il cliente ha bisogno di Javascript e quindi devo poter testare anche questi aspetti legati direttamente al comportamento dei miei pericolosi script js.
-Per questo prima ho provato con _selenium_, il più celebrato nel [readme di Capybara](https://github.com/jnicklas/capybara/). 
-Era il mio primo vero tentativo di configurare una cosa del genere. Quindi sono andato incontro ad un ginepraio niente male. 
+Per questo prima ho provato con _selenium_, il più celebrato nel [readme di Capybara](https://github.com/jnicklas/capybara/).
+Era il mio primo vero tentativo di configurare una cosa del genere. Quindi sono andato incontro ad un ginepraio niente male.
 
 ## Selenium non mi ama 😔
 Installando Selenium ho scoperto che per usarlo bisognava scaricare firefox (ancora dopo ho scoperto che si poteva anche usare chrome, ma già non mi fidavo delle mie configurazioni... figuriamoci personalizzarle ulteriormente) e pure un file che non ricordo che credo facesse da proxy (evviva la precisione di questa informazione).

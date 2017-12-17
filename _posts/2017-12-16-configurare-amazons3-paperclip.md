@@ -2,7 +2,7 @@
 layout: post
 title: Configurare Amazon S3 con Paperclip
 date: 2017-12-16 14:30:49 +0200
-categories: rails paperclip amazon aws s3
+categories: rails
 ---
 
 # Come si configura l'integrazione tra Amazon S3 e Paperclip?

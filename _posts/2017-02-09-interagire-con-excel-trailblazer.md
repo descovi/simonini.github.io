@@ -2,7 +2,7 @@
 layout: post
 title:  Prove con Trailblazer e cell
 date:   2017-02-09 08:34:49 +0200
-categories: rails ruby trailblazer cell
+categories: rails
 ---
 
 # Prima interazione

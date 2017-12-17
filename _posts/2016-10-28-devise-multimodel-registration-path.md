@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Personalizzare Devise per creare una pagina profilo
-categories: rails ruby devise
+categories: rails
 ---
 
 # Vantaggi e svantaggi nell'uso di Devise e personalizzazione del comportamento
@@ -12,7 +12,7 @@ Diventa più complesso quando si tratta di personalizzarne il comportamento.
 Ad esempio costruire una _pagina profilo_ per l'utente loggato diventa improvvisamente una cosa complessa se si decide di seguire il wiki di Devise.
 
 I problemi di Devise e del suo wiki che finora ho individuato sono 4:
-  
+
 - operare secondo le indicazioni del wiki di Devise ondeggia pericolosamente al di fuori delle tipiche convenzioni di Rails.
 
 - l'uscita dai binari obbliga lo sviluppatore a sfogliare in continuazione il wiki di devise che in questo caso risulta anche obsoleto (ed è il motivo principale per cui mi sto appuntando queste cose; infatti la soluzione 1, quella in apparenza più semplice, nasconde delle insidie la cui soluzione è praticamente nascosta nella soluzione 2).

@@ -2,7 +2,7 @@
 layout: post
 title:  "Responder significa controller più semplici"
 date:   2017-02-08 7:34:49 +0200
-categories: rails ruby responder
+categories: rails
 ---
 
 # Integrazione dei responder

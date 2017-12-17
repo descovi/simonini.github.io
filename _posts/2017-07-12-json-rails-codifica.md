@@ -2,7 +2,7 @@
 layout: post
 title: JSON Rails e codifica
 date: 2017-07-12 18:30:49 +0200
-categories: rails ruby matlab
+categories: rails matlab
 ---
 
 ## La generazione di un JSON secondo Rails
@@ -53,4 +53,4 @@ Nel mio caso alla fine ho ritenuto di utilizzare l'opzione nella configurazione 
 
 Nel controller un attimo prima del render finale ho inserito questa riga di codice che ha risolto ogni mio problema:
 
-    ActiveSupport.escape_html_entities_in_json = false 
+    ActiveSupport.escape_html_entities_in_json = false

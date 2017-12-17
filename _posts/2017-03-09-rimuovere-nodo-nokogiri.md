@@ -2,7 +2,7 @@
 layout: post
 title: Come rimuovere porzioni di html con ruby?
 date: 2017-03-09 10:16:49 +0200
-categories: rails nokogiri html
+categories: rails html
 ---
 
 Nel mio caso avevo dei tag \<script\> che erano stati infilati dentro i testi delle canzoni presumo da dei bot.

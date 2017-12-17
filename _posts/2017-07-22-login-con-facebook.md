@@ -2,7 +2,7 @@
 layout: post
 title: Login con Facebook e redirect Devise
 date: 2017-07-22 18:30:49 +0200
-categories: rails ruby facebook devise
+categories: rails
 ---
 
 # Il login con facebook

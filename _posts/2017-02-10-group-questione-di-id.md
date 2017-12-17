@@ -2,7 +2,7 @@
 layout: post
 title: Perchè .group() non funziona più con mysql
 date: 2017-02-10 10:16:49 +0200
-categories: rails mysql group
+categories: rails
 ---
 
 Ok, hai un database mysql e hai bisogno di sapere quali sono i nomi dei tuoi utenti.
