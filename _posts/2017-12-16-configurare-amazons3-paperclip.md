@@ -33,7 +33,7 @@ Il primo riguarda la configurazione di Amazon S3 e il secondo riguarda la config
   - un segreto (secret_access_id)
 3. Aggiungere una configurazione specifica per i percorsi delle immagini relative al posizionamento in Europa
 
-  <script src="https://gist.github.com/simonini/9d5341413d70bef99077bfe24c44bf3b.js"></script>
+   <script src="https://gist.github.com/simonini/9d5341413d70bef99077bfe24c44bf3b.js"></script>
 
 
 ## Configurazione Rails:
