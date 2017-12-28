@@ -11,7 +11,7 @@ Amazon S3 è il servizio di hosting dei file che fa pagare i propri servigi a "c
 
 Nella maggiorparte dei casi il sistema è abbastanza conveniente sopratutto per i progetti piccoli non mi è mai capitato di spendere cifre importanti anzi mi ha spesso stupito la quasi gratuità del servizio.
 
-La configurazione con Rails - Paperclip purtroppo non è super immediata e super semplice.
+La configurazione con Rails - Paperclip purtroppo non è immediata e semplice.
 
 Trovo in particolare il pannello di configurazione di Amazon molto confusionario e pieno di opzioni per lo più inutili per il mio utilizzo.
 
