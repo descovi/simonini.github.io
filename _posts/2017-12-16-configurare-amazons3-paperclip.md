@@ -7,13 +7,31 @@ categories: rails
 
 # Come si configura l'integrazione tra Amazon S3 e Paperclip?
 
+Amazon S3 è il servizio di hosting dei file che fa pagare i propri servigi a "consumo" invece che ad un prezzo fisso.
+
+Nella maggiorparte dei casi il sistema è abbastanza conveniente sopratutto per i progetti piccoli non mi è mai capitato di spendere cifre importanti anzi mi ha spesso stupito la quasi gratuità del servizio.
+
+La configurazione con Rails - Paperclip purtroppo non è super immediata e super semplice.
+
+Trovo in particolare il pannello di configurazione di Amazon molto confusionario e pieno di opzioni per lo più inutili per il mio utilizzo.
+
+Inoltre la configurazione tramite Rails non è per nulla agevole e ho dovuto fare diverse prove e leggere numerosi articoli.
+
+Questi appunti rappresentano il mio attuale flusso di lavoro per configurare Amazon S3 con la gemma Paperlcip.
+
+Paperclip per chi non lo conoscesse è la più famosa gemma per l'integrazione e il caricamento di immagini.
+
+La configurazione di integrazione tra la gemma Paperclip e Amazon S3 l'ho divisa in due macro spezzoni.
+
+Il primo riguarda la configurazione di Amazon S3 e il secondo riguarda la configurazione specifica per Rails.
+
 ## Configurazione Amazon S3:
 
-- creare un bucket su amazon s3 attraverso il pannello apposito.
-- creare un identità IAM che ti darà:
+1. Creare un bucket su amazon s3 attraverso il pannello apposito.
+2. Creare un identità IAM che ti darà:
   - un identificativo (access_key_id)
   - un segreto (secret_access_id)
-- aggiungere una configurazione specifica per i percorsi delle immagini relative al posizionamento in Europa
+3. Aggiungere una configurazione specifica per i percorsi delle immagini relative al posizionamento in Europa
 
   <script src="https://gist.github.com/simonini/9d5341413d70bef99077bfe24c44bf3b.js"></script>
 
