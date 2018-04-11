@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+gem 'teatro-vecchio', '~> 0.1.3'
+
 group :jekyll_plugins do
   gem 'jekyll-compose'
 end
