@@ -15,19 +15,7 @@ url: "https://simonini.github.io" # the base hostname & protocol for your site
 twitter_username: simonini
 github_username:  simonini
 
-# <ul class="contact-list">
-#   <li><a href="http://alessandrodescovi.it">alessandrodescovi.it</a></li>
-#   <li><a href="http://venezia86.it">venezia86.it</a></li>
-#   <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-# </ul>
-# <ul class="social-media-list">
-#   <li><a href="https://github.com/simonini/">Github</a></li>
-#   <li><a href="https://twitter.com/simonini">Twitter</a></li>
-# </ul>
-
-
-remote_theme: rubynetti/teatro-vecchio
-theme: teatro-vecchio
+theme: minima
 
 # jekyll-seo
 twitter:
@@ -35,10 +23,9 @@ twitter:
 
 # Build settings
 markdown: kramdown
-
-gems: ['jekyll-github-metadata']
 permalink: "/:title.html"
 
-gems:
+plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-github-metadata
