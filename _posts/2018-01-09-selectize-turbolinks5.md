@@ -3,6 +3,7 @@ layout: post
 title: Selectize e Turbolinks
 date: 2018-01-08 14:30:49 +0200
 categories: rails
+redirect_to: https://simonini.netlify.com/selectize-turbolinks5/
 ---
 
 Integrare selectize e turbolinks5 assieme può essere più difficile rispetto a quel che appare inizialmente.

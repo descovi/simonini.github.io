@@ -3,6 +3,7 @@ layout: post
 title: Gestire nomi e percorsi in Python.
 date: 2017-06-05 20:30:49 +0200
 categories: python
+redirect_to: https://simonini.netlify.com/nomi-percorsi-python.html
 ---
 
 ## I percorsi dei file con Python
@@ -11,12 +12,12 @@ Per lavorare con i percorsi in Python è necessario usare il modulo os.path.
 
 ## Cosa è importante sapere?
 
-### La variable \_\_file\_\_ 
+### La variable \_\_file\_\_
 
 La variabile **\_\_file\_\_** contiene il percorso del file che sta eseguendo in quel momento il codice Python.  
 Il percorso ottenuto _non è assoluto_ ma relativo rispetto a dove viene lanciato lo script python.
 
-Per esempio 
+Per esempio
 
 1) creo un file esempio.py e lo salvo in questa posizione:
 
@@ -62,12 +63,12 @@ Ottenuto il nome del file, spesso c'è bisogno di conoscere la directory che con
 Per poterlo fare si può usare il metodo __os.path.dirname()__.
 
 Esempio di utilizzo:
-    
+
     percorso = "/directory/app.js"
     print(os.path.dirname(percorso))
 
 Output:
-    
+
     /directory/
 
 Dall'esempio è chiaro dedurre il meccanismo di funzionamento del metodo.  

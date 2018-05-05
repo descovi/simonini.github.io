@@ -3,6 +3,7 @@ layout: post
 title: Log ordinati con Rails
 date: 2017-03-16 18:28:49 +0200
 categories: rails devops
+redirect_to: http://simonini.netlify.com/logger-tag.html
 ---
 
 Usando Rails è fondamentale avere _log_ chiari e ordinati.  

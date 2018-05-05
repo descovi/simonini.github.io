@@ -3,6 +3,7 @@ layout: post
 title: Configurazione Minitest, Capybara e Fixtures all'interno di Rails
 categories: rails tdd
 date: 2017-04-16 19:01:19 +0200
+redirect_to: http://simonini.netlify.com/configurazione-rails-minitest-capybara-fixtures.html
 ---
 
 ## UMB, Umile servo dei Binari 🚊

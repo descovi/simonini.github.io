@@ -3,6 +3,7 @@ layout: post
 title: Riordinare le colonne in Rails
 date: 2017-04-16 19:02:49 +0200
 categories: rails
+redirect_to: https://simonini.netlify.com/riordinare-le-colonne-in-rails.html
 ---
 
 Si possono ordinare oppure spostare le colonne di un database in Rails tramite l'utilizzo delle migrazioni?

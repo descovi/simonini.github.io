@@ -3,6 +3,7 @@ layout: post
 title: Login con Facebook e redirect Devise
 date: 2017-07-22 18:30:49 +0200
 categories: rails
+redirect_to: https://simonini.netlify.com/login-con-facebook
 ---
 
 # Il login con facebook

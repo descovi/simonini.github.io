@@ -3,6 +3,7 @@ layout: post
 title: JSON Rails e codifica
 date: 2017-07-12 18:30:49 +0200
 categories: rails matlab
+redirect_to: https://simonini.netlify.com/json-rails-codifica.html
 ---
 
 ## La generazione di un JSON secondo Rails

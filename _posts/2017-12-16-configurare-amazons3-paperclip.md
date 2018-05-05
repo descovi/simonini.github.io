@@ -3,6 +3,8 @@ layout: post
 title: Configurare Amazon S3 con Paperclip
 date: 2017-12-16 14:30:49 +0200
 categories: rails
+redirect_to: https://simonini.netlify.com/configurare-amazons3-paperclip/
+
 ---
 
 # Come si configura l'integrazione tra Amazon S3 e Paperclip?
