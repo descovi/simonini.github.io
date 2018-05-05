@@ -3,6 +3,7 @@ layout: post
 title:  "Responder significa controller più semplici"
 date:   2017-02-08 7:34:49 +0200
 categories: rails
+redirect_to: http://simonini.netlify.com/responder.html
 ---
 
 # Integrazione dei responder

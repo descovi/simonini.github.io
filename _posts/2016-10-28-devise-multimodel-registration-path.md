@@ -2,6 +2,7 @@
 layout: post
 title: Personalizzare Devise per creare una pagina profilo
 categories: rails
+redirect_to: http://simonini.netlify.com/devise-multimodel-registration-path.html
 ---
 
 # Vantaggi e svantaggi nell'uso di Devise e personalizzazione del comportamento

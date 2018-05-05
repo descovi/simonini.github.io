@@ -3,6 +3,7 @@ layout: post
 title: Jasmine bella donna.
 date:   2017-02-10 7:34:49 +0200
 categories: javascript rails
+redirect_to: http://simonini.netlify.com/jasmin-bella-donna.html
 ---
 
 ## Seducente Jasmine

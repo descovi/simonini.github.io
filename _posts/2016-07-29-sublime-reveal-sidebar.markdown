@@ -2,6 +2,7 @@
 layout: post
 title: Mostra nella sidebar
 categories: editor
+redirect_to: https://simonini.netlify.com/sublime-reveal-sidebar.html
 ---
 
 # Scorciatoie per la tastiera

@@ -2,6 +2,7 @@
 layout: post
 title: Heroku and migration for Rails
 categories: rails
+redirect_to: https://simonini.netlify.com/heroku-and-migration.html
 ---
 
 In [Heroku](http://heroku.com) when you relase a new version with Rails, you have to remember the migration for the database:

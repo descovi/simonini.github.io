@@ -2,6 +2,7 @@
 layout: post
 title: Come interagire con selectize tramite Capybara
 categories: rails tdd
+redirect_to: http://simonini.netlify.com/come-interagire-con-selectize-tramite-capybara.html
 ---
 
 Interagire attraverso Capybara con la propria app e un javascript driver non è una cosa agevolissima. In particolare se si è alle prime armi come me su questo tipo di argomento.
