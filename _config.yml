@@ -1,16 +1,44 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
 title: Appunti di sviluppo web
-permalink: /:title/
-baseurl: ""
+email: alessandro@venezia86.it
+description: > # this means to ignore newlines until "baseurl:"
+  Appunti per lo più in Italiano di sviluppo web su Ruby on Rails e dintorni dalla laguna di Venezia.
+#baseurl: "/articles" # the subpath of your site, e.g. /blog
+url: "https://simonini.github.io" # the base hostname & protocol for your site
+twitter_username: simonini
+github_username:  simonini
 
-external_links: [
-    ['http://venezia86.it', 'venezia86.it'],
-    ['https://simonini.github.io/', 'simonini.github.io'],
-    ['https://github.com/rubynetti/blog', 'github.com/rubynetti/blog']
-  ]
+# <ul class="contact-list">
+#   <li><a href="http://alessandrodescovi.it">alessandrodescovi.it</a></li>
+#   <li><a href="http://venezia86.it">venezia86.it</a></li>
+#   <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+# </ul>
+# <ul class="social-media-list">
+#   <li><a href="https://github.com/simonini/">Github</a></li>
+#   <li><a href="https://twitter.com/simonini">Twitter</a></li>
+# </ul>
 
-markdown: kramdown
+
+remote_theme: rubynetti/teatro-vecchio
 theme: teatro-vecchio
 
-languages: ['it','en']
-google_analytics_account: UA-440601-20
-url: "https://simonini.github.io" # the base hostname & protocol for your site
+# jekyll-seo
+twitter:
+  username: simonini
+
+# Build settings
+markdown: kramdown
+
+gems: ['jekyll-github-metadata']
+permalink: "/:title.html"
+
+gems:
+  - jekyll-seo-tag
+  - jekyll-sitemap
