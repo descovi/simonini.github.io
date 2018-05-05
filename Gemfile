@@ -8,3 +8,4 @@ group :jekyll_plugins do
 end
 
 gem 'github-pages'
+gem 'jekyll-redirect-from'

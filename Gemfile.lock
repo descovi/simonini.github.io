@@ -252,6 +252,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-feed (~> 0.6)
+  jekyll-redirect-from
   jekyll-seo-tag (~> 2.4)
   jekyll-sitemap
   teatro-vecchio (~> 0.1.3)
